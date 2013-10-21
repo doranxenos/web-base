@@ -1,3 +1,5 @@
+/* global define */
+
 define([], function() {
     var App = function() {
 

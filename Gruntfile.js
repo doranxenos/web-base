@@ -10,30 +10,22 @@ module.exports = function(grunt) {
 	},
 
 	less: {
-	    development: {
-		options: {
-		    paths: ["app"]
-		},
-		files: {
-		    "path/to/result.css": "path/to/source.less"
-		}
-	    },
-	    production: {
-		options: {
-		    paths: ["assets/css"],
-		    yuicompress: true
-		},
-		files: {
-		    "path/to/result.css": "path/to/source.less"
-		}
+          production: {
+            options: {
+              compress: true,
+              yuicompress: true
+            },
+            files: {
+	      "build/app.css": "app/less/app.less"
 	    }
-	}
+          }
+        }
     });
-    
+
     grunt.registerTask('copy-require', function() {
 	grunt.file.mkdir('build/js/lib');
 	grunt.file.copy('node_modules/requirejs/require.js', 'build/js/lib/require.js');
     });
-    
+
     grunt.registerTask('default', ['copy-require']);
 };

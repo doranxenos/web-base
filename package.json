@@ -1,20 +1,22 @@
 {
-  "name": "web-base"
-, "version": "0.0.1"
-, "private": true
-, "dependencies": {
-    "requirejs": "latest"
-  , "connect": "2.7.0"
-  }
-, "devDependencies": {
-    "mocha": "latest"
-  , "chai": "latest"
-  , "grunt": "latest"
-  , "grunt-exec": "latest"
-  , "grunt-contrib-less": "latest"
-  , "less": "latest"
-  }
-, "scripts": {
-    "grunt": "node_modules/.bin/grunt"
-  }
+    "name": "web-base",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "requirejs": "latest",
+        "connect": "2.7.0",
+        "backbone": "latest",
+        "underscore": "latest",
+        "q": "latest"
+    },
+    "devDependencies": {
+        "grunt": "latest",
+        "grunt-exec": "latest",
+        "grunt-contrib-less": "latest",
+        "less": "latest",
+        "testem": "latest"
+    },
+    "scripts": {
+        "grunt": "node_modules/.bin/grunt"
+    }
 }
