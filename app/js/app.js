@@ -1,13 +1,13 @@
 /* global define */
 
 define([], function() {
-    var App = function() {
+  var App = function() {
 
-    };
+  };
 
-    App.prototype = {
+  App.prototype = {
 
-    };
+  };
 
-    return App;
+  return App;
 });

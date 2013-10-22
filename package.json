@@ -11,8 +11,9 @@
     },
     "devDependencies": {
         "grunt": "latest",
-        "grunt-exec": "latest",
         "grunt-contrib-less": "latest",
+        "grunt-contrib-requirejs": "latest",
+        "grunt-contrib-jshint": "latest",
         "less": "latest",
         "testem": "latest"
     },
