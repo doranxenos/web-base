@@ -2,7 +2,7 @@
 
 define([], function() {
   var App = function() {
-
+    console.log("App initiated");
   };
 
   App.prototype = {
